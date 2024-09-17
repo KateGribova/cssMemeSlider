@@ -1,0 +1,115 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F5BBD3;
+}
+
+.wrapper{
+    height: 65%;
+    padding: 3%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    display: none;
+}
+
+.slider{
+    max-width: 488px;
+    height: 476px;
+    background-color: black;
+
+    display: flex;
+    overflow: hidden;
+}
+
+img{
+    object-fit: contain;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav{
+    width: 25px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: #E5523E;
+    cursor: pointer;
+}
+
+.text{
+    display: flex;
+    max-width: 130px;
+    
+    overflow: hidden;
+}
+
+.text_mem1, .text_mem2, .text_mem3, .text_mem4{
+    width: 100%;
+    max-width: 130px;
+    flex-shrink: 0;
+}
+
+p{
+    text-align: right;
+    font-size: 25px;
+    font-family: "Poppins";
+    color: #E5523E;
+}
+
+#mem2:checked ~ .slider .first{
+    margin-left: -100%;
+}
+
+#mem3:checked ~ .slider .first{
+    margin-left: -200%;
+}
+
+#mem4:checked ~ .slider .first{
+    margin-left: -300%;
+}
+
+#mem2:checked ~ .content .text .text_mem1{
+    margin-left: -100%;
+}
+
+#mem3:checked ~ .content .text .text_mem1{
+    margin-left: -200%;
+}
+
+#mem4:checked ~ .content .text .text_mem1{
+    margin-left: -300%;
+}

@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meme Slider</title>
+    <title>cssMemeSlider</title>
     <link rel="stylesheet" href="/cssMemeSlider/cssMemeSlider/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        
+        <div class="wrapper">
+            <input type="radio" name="memes" id="mem1">
+            <input type="radio" name="memes" id="mem2">
+            <input type="radio" name="memes" id="mem3">
+            <input type="radio" name="memes" id="mem4"> 
+            
+            
+            <div class="slider">
+                <div class="memes first"><img src="./images/image1.png" alt="Mem"></div>
+                <div class="memes"><img src="./images/image2.png" alt="Mem"></div>
+                <div class="memes"><img src="./images/image3.png" alt="Mem"></div>
+                <div class="memes"><img src="./images/image4.png" alt="Mem"></div>
+            </div>
+
+            <div class="content">
+                <div class="control">
+                    <label for="mem1" class="nav"></label>
+                    <label for="mem2" class="nav"></label>
+                    <label for="mem3" class="nav"></label>
+                    <label for="mem4" class="nav"></label>               
+                </div>
+                
+                <div class="text">
+                    <div class="text_mem1"><p>Working</p></div>
+                    <div class="text_mem2"><p>Training</p></div>
+                    <div class="text_mem3"><p>Cleaning</p></div>
+                    <div class="text_mem4"><p>Relaxing</p></div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
