@@ -24,6 +24,7 @@ main{
     height: 65%;
     padding: 3%;
     background-color: #fff;
+    border-radius: 2%;
 
     display: flex;
     flex-direction: column;
@@ -44,10 +45,6 @@ input{
     overflow: hidden;
 }
 
-img{
-    object-fit: contain;
-}
-
 .content{
     display: flex;
     justify-content: space-between;
@@ -59,15 +56,28 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 10%;
 }
 
-.nav{
+.nav-block{
     width: 25px;
     height: 13px;
     border-radius: 10px;
     background-color: #E5523E;
     cursor: pointer;
+}
+
+.nav{
+    width: 35px;
+    height: 23px;
+    outline: #E5523E;
+    
+    background-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text{
@@ -85,10 +95,12 @@ img{
 
 p{
     text-align: right;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: "Poppins";
     color: #E5523E;
 }
+
+
 
 #mem1:checked ~ .slider .first{
     margin-left: 0;
@@ -130,47 +142,111 @@ p{
     transition-duration: .3s;
 }
 
-.nav:hover{
+.nav:hover .nav-block{
+    width: 25px;
+    height: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+
     background-color: #F5BBD3;
     transition-duration: .3s;
 }
 
-input:checked:nth-child(1) ~ .content .nav:nth-child(1){
+input:checked:nth-child(1) ~ .content .nav:nth-child(1) .nav-block{
     width: 22px;
     height: 9px;
     cursor: default;
 
     border: 2px solid #E5523E;
     background-color: transparent;
-    transition-duration: .3s;
+    transition: .3s;
 }
 
-input:checked:nth-child(2) ~ .content .nav:nth-child(2){
+input:checked:nth-child(2) ~ .content .nav:nth-child(2) .nav-block{
     width: 22px;
     height: 9px;
     cursor: default;
 
     border: 2px solid #E5523E;
     background-color: transparent;
-    transition-duration: .3s;
+    transition: .3s;
 }
 
-input:checked:nth-child(3) ~ .content .nav:nth-child(3){
+input:checked:nth-child(3) ~ .content .nav:nth-child(3) .nav-block{
     width: 22px;
     height: 9px;
     cursor: default;
 
     border: 2px solid #E5523E;
     background-color: transparent;
-    transition-duration: .3s;
+    transition: .3s;
 }
 
-input:checked:nth-child(4) ~ .content .nav:nth-child(4){
+input:checked:nth-child(4) ~ .content .nav:nth-child(4) .nav-block{
     width: 22px;
     height: 9px;
     cursor: default;
 
     border: 2px solid #E5523E;
     background-color: transparent;
-    transition-duration: .5s;
+    transition: .3s;
+}
+
+@media (max-width: 650px){
+    .slider{
+        max-width: 400px;
+        max-height: 390px;
+    }
+
+    .nav-block{
+        width: 20px;
+        height: 10px;
+    }
+
+    input:checked:nth-child(1) ~ .content .nav:nth-child(1) .nav-block{
+        width: 17px;
+        height: 7px;
+    }
+
+    input:checked:nth-child(2) ~ .content .nav:nth-child(2) .nav-block{
+        width: 17px;
+        height: 7px;
+    }
+    input:checked:nth-child(3) ~ .content .nav:nth-child(3) .nav-block{
+        width: 17px;
+        height: 7px;
+    }
+    input:checked:nth-child(4) ~ .content .nav:nth-child(4) .nav-block{
+        width: 17px;
+        height: 7px;
+    }
+    
+    img{
+        max-width: 400px;
+        height: auto;
+    }
+    
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 550px){
+    .wrapper{
+        height: 45%;
+    }
+
+    .slider{
+        max-width: 300px;
+        max-height: 290px;
+    }
+    
+    img{
+        max-width: 300px;
+        height: auto;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
 }
