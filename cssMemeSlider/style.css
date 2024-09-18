@@ -193,6 +193,10 @@ input:checked:nth-child(4) ~ .content .nav:nth-child(4) .nav-block{
 }
 
 @media (max-width: 650px){
+    .wrapper{
+        height: 55%;
+    }
+
     .slider{
         max-width: 400px;
         max-height: 390px;
@@ -233,7 +237,7 @@ input:checked:nth-child(4) ~ .content .nav:nth-child(4) .nav-block{
 
 @media (max-width: 550px){
     .wrapper{
-        height: 45%;
+        height: 50%;
     }
 
     .slider{
@@ -253,7 +257,7 @@ input:checked:nth-child(4) ~ .content .nav:nth-child(4) .nav-block{
 
 @media (max-width: 400px){
     .wrapper{
-        height: 30%;
+        height: 45%;
         justify-content: flex-start;
         gap: 10px;
     }
