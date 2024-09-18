@@ -90,26 +90,87 @@ p{
     color: #E5523E;
 }
 
+#mem1:checked ~ .slider .first{
+    margin-left: 0;
+    transition-duration: .3s;
+}
+
 #mem2:checked ~ .slider .first{
     margin-left: -100%;
+    transition-duration: .3s;
 }
 
 #mem3:checked ~ .slider .first{
     margin-left: -200%;
+    transition-duration: .3s;
 }
 
 #mem4:checked ~ .slider .first{
     margin-left: -300%;
+    transition-duration: .3s;
+}
+
+#mem1:checked ~ .content .text .text_mem1{
+    margin-left: 0;
+    transition-duration: .3s;
 }
 
 #mem2:checked ~ .content .text .text_mem1{
     margin-left: -100%;
+    transition-duration: .3s;
 }
 
 #mem3:checked ~ .content .text .text_mem1{
     margin-left: -200%;
+    transition-duration: .3s;
 }
 
 #mem4:checked ~ .content .text .text_mem1{
     margin-left: -300%;
+    transition-duration: .3s;
+}
+
+.nav:hover{
+    background-color: #F5BBD3;
+    transition-duration: .3s;
+}
+
+input:checked:nth-child(1) ~ .content .nav:nth-child(1){
+    width: 22px;
+    height: 9px;
+    cursor: default;
+
+    border: 2px solid #E5523E;
+    background-color: transparent;
+    transition-duration: .3s;
+}
+
+input:checked:nth-child(2) ~ .content .nav:nth-child(2){
+    width: 22px;
+    height: 9px;
+    cursor: default;
+
+    border: 2px solid #E5523E;
+    background-color: transparent;
+    transition-duration: .3s;
+}
+
+input:checked:nth-child(3) ~ .content .nav:nth-child(3){
+    width: 22px;
+    height: 9px;
+    cursor: default;
+
+    border: 2px solid #E5523E;
+    background-color: transparent;
+    transition-duration: .3s;
+}
+
+input:checked:nth-child(4) ~ .content .nav:nth-child(4){
+    width: 22px;
+    height: 9px;
+    cursor: default;
+
+    border: 2px solid #E5523E;
+    background-color: transparent;
+    transition-duration: .5s;
 }
