@@ -250,3 +250,35 @@ input:checked:nth-child(4) ~ .content .nav:nth-child(4) .nav-block{
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 400px){
+    .wrapper{
+        height: 30%;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .slider{
+        max-width: 200px;
+        max-height: 190px;
+    }
+    
+    .content{
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    .control{
+        gap: 3%;
+    }
+
+    img{
+        max-width: 200px;
+        height: auto;
+    }
+
+    p{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+}
